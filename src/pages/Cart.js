@@ -16,9 +16,9 @@ const Cart = () => {
   return (
     <div className="container mt-3">
       <h3>Your Items</h3>
-      <ul class="list-group">
+      <ul className="list-group">
         {state.carts.map((product) => (
-          <li class="list-group-item">
+          <li className="list-group-item" key={product.id}>
             <div className="d-flex justify-content-between align-items-center">
               <div className="d-flex align-items-center ">
                 <img

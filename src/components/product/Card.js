@@ -1,4 +1,7 @@
+import { useHistory } from "react-router-dom";
+
 const Card = ({ product, handleAddToCart }) => {
+  const router = useHistory();
   const { id, name, description, imageUrl } = product;
 
   return (
@@ -13,7 +16,9 @@ const Card = ({ product, handleAddToCart }) => {
               height: "150px",
               width: "100%",
               objectFit: "cover",
+              cursor: "pointer",
             }}
+            onClick={() => router.push(`/detail/${id}`)}
           />
         </div>
         <button
