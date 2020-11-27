@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "CI= npm run build",
+    "build": "CI= yarn run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
