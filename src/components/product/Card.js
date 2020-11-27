@@ -18,7 +18,7 @@ const Card = ({ product, handleAddToCart }) => {
               objectFit: "cover",
               cursor: "pointer",
             }}
-            onClick={() => router.push(`/detail/${id}`)}
+            onClick={() => router.push(`/product/${id}`)}
           />
         </div>
         <button
